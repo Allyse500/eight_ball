@@ -8,7 +8,7 @@ const EightBall = () =>{
     const API_PATH = "http://localhost:3003/eight_ball/src/index.php";
     const handleSubmit = (event) =>{
         event.preventDefault();
-        document.getElementById("eightBallBody").style.animation = "shake 2s";
+        document.getElementById("eightBallBody1").style.animation = "shake 2s";
         console.log("newEntry value: " + newEntry.phoneOrEmail);
         axios.post(API_PATH, {
             data:newEntry,
@@ -21,9 +21,9 @@ const EightBall = () =>{
         setEntry({phoneOrEmail: ""});
     }
     return (
-        <div id="eightBallBody">
-            <div id="eightBallMessageContainer">
-                <div id="eightBallMessage">
+        <div id="eightBallBody1">
+            <div id="eightBallMessageContainer1">
+                <div id="eightBallMessage1">
                     Enter phone number or email to receive fortune {smile}!
                 </div>
             </div>
